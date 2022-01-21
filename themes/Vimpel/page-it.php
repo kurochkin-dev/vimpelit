@@ -60,6 +60,8 @@ get_header();
 	<section class="animation-table-it">
 		<div class="animation-table-it__main-container">
 			<img src="<?php the_field('it-service_price_table_default_img_one'); ?>"
+				 alt="Изображение монитора" class="animation-table-it__img animation-table-it__img_desktop-def"/>
+			<img src="<?php the_field('it-service_price_table_default_img_one'); ?>"
 				 alt="Изображение монитора" class="animation-table-it__img animation-table-it__img_desktop"/>
 			<div class="animation-table-it__container">
 				<h3 class="animation-table-it__heading"><?php the_field('it-service_price_title_one'); ?></h3>
@@ -97,6 +99,9 @@ get_header();
 			</div>
 		</div>
 		<div class="animation-table-it__main-container">
+			<img src="<?php the_field('it-service_price_table_default_img_two'); ?>"
+				 alt="Изображение сервера"
+				 class="animation-table-it__img-left-direction animation-table-it__img-left-direction_default-server-def"/>
 			<img src="<?php the_field('it-service_price_table_default_img_two'); ?>"
 				 alt="Изображение сервера"
 				 class="animation-table-it__img-left-direction animation-table-it__img-left-direction_default-server"/>
@@ -138,6 +143,9 @@ get_header();
 		<div class="animation-table-it__main-container">
 			<img src="<?php the_field('it-service_price_table_default_img_three'); ?>"
 				 alt="Изображение монитора"
+				 class="animation-table-it__img animation-table-it__img_default-administrate-def"/>
+			<img src="<?php the_field('it-service_price_table_default_img_three'); ?>"
+				 alt="Изображение монитора"
 				 class="animation-table-it__img animation-table-it__img_default-administrate"/>
 			<div class="animation-table-it__container">
 				<h3 class="animation-table-it__heading"><?php the_field('it-service_price_title_three'); ?></h3>
@@ -177,6 +185,9 @@ get_header();
 		<div class="animation-table-it__main-container">
 			<img src="<?php the_field('it-service_price_table_default_img_four'); ?>"
 				 alt="Изображение телефона"
+				 class="animation-table-it__img-left-direction animation-table-it__img-left-direction_phone-default-def"/>
+			<img src="<?php the_field('it-service_price_table_default_img_four'); ?>"
+				 alt="Изображение телефона"
 				 class="animation-table-it__img-left-direction animation-table-it__img-left-direction_phone-default"/>
 			<div class="animation-table-it__container animation-table-it__container_left-direction">
 				<h3 class="animation-table-it__heading"><?php the_field('it-service_price_title_four'); ?></h3>
@@ -214,6 +225,9 @@ get_header();
 			</div>
 		</div>
 		<div class="animation-table-it__main-container">
+			<img src="<?php the_field('it-service_price_table_default_img_five'); ?>"
+				 alt="Изображение монитора"
+				 class="animation-table-it__img animation-table-it__img_default-user-def"/>
 			<img src="<?php the_field('it-service_price_table_default_img_five'); ?>"
 				 alt="Изображение монитора"
 				 class="animation-table-it__img animation-table-it__img_default-user"/>

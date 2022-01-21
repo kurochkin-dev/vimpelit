@@ -726,7 +726,7 @@ a {
 	position: absolute;
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility .3s,opacity .3s linear;
+	transition: visibility .3s, opacity .3s linear;
 	left: 130px;
 	top: 60px;
 	max-width: 413px;
@@ -738,7 +738,7 @@ a {
 	position: absolute;
 	visibility: hidden;
 	opacity: 0;
-	transition: visibility .3s,opacity .3s linear;
+	transition: visibility .3s, opacity .3s linear;
 	left: 310px;
 	top: 60px;
 	max-width: 413px;
@@ -874,7 +874,6 @@ a {
 }
 
 
-
 .menu-item-534:hover .drop-down-menu {
 	left: 28%;
 }
@@ -983,7 +982,6 @@ a {
 }
 
 
-
 .menu-item-535 a {
 	font-family: 'Noto Sans JP', sans-serif;
 	margin: 0 auto 0 0;
@@ -1090,7 +1088,6 @@ a {
 	text-align: left;
 	border-bottom: 1px solid transparent;
 }
-
 
 
 .drop-down-menu__links {
@@ -2392,7 +2389,7 @@ a {
 }
 
 .wpcf7-radio {
-
+	display: flex;
 }
 
 .wpcf7-radio label {
@@ -3221,6 +3218,12 @@ div .wpcf7 form .wpcf7-response-output {
 	transition: opacity .3s;
 }
 
+.animation-table-it__img_desktop-def {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
 .animation-table-it__img_three {
 	visibility: visible;
 	opacity: 1;
@@ -3263,6 +3266,12 @@ div .wpcf7 form .wpcf7-response-output {
 	transition: opacity .3s;
 }
 
+.animation-table-it__img_default-administrate-def {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
 .animation-table-it__img_color-administrate {
 	visibility: visible;
 	opacity: 1;
@@ -3270,6 +3279,12 @@ div .wpcf7 form .wpcf7-response-output {
 }
 
 .animation-table-it__img_default-user {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+.animation-table-it__img_default-user-def {
 	visibility: visible;
 	opacity: 1;
 	transition: opacity .3s;
@@ -3310,7 +3325,14 @@ div .wpcf7 form .wpcf7-response-output {
 	transition: visibility .3s, opacity .3s linear;
 }
 
+
 .animation-table-it__img-left-direction_default-server {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+.animation-table-it__img-left-direction_default-server-def {
 	visibility: visible;
 	opacity: 1;
 	transition: opacity .3s;
@@ -3335,6 +3357,12 @@ div .wpcf7 form .wpcf7-response-output {
 }
 
 .animation-table-it__img-left-direction_phone-default {
+	visibility: visible;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+.animation-table-it__img-left-direction_phone-default-def {
 	visibility: visible;
 	opacity: 1;
 	transition: opacity .3s;
@@ -3856,6 +3884,7 @@ div .wpcf7 form .wpcf7-response-output {
 	color: #373737;
 	margin: 32px auto 0 0;
 }
+
 
 .history-web {
 	display: flex;
@@ -8821,6 +8850,7 @@ div .wpcf7 form .wpcf7-response-output {
 	padding-right: 15px;
 	text-decoration: underline;
 	cursor: pointer;
+	text-align: left;
 }
 
 .design__body-text:hover {
@@ -8864,22 +8894,35 @@ div .wpcf7 form .wpcf7-response-output {
 	justify-content: center;
 }
 
-.animation__img {
+.animation__img-main {
 	position: absolute;
 	width: auto;
 	height: auto;
 	top: 37px;
 	right: 216px;
 	visibility: hidden;
-	opacity: 0;
-	transition: opacity 5s ease-out;
+	opacity: 1;
+	transition: visibility .3s, opacity .3s linear;
+}
+
+.animation__img {
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 37px;
+	right: 216px;
+	/*transition-property: opacity;*/
+	/*transition-duration: 3s;*/
+	/*visibility: hidden;*/
+	/*opacity: 0;*/
 	/*transition: visibility .3s, opacity .3s linear;*/
 }
+
 
 .animation__img_main {
 	visibility: visible;
 	opacity: 1;
-	/*transition: opacity .3s;*/
+	transition: opacity .3s;
 }
 
 .animation__img_design {
@@ -14349,7 +14392,7 @@ button, input, optgroup, select, textarea {
 	/*align-items: center;*/
 }
 
-.popup__radio .wpcf7-radio {
+.popup__radio .wpcf7-form-control .wpcf7-radio {
 	display: flex;
 }
 

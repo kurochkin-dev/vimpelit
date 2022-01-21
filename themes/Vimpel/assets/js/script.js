@@ -186,7 +186,7 @@ $(document).ready(function () {
     $('.drop-down__block .sub-menu').addClass('navigation__list navigation__list-dropdown');
 });
 
-// смена изображений при наведении по дата-атрибуту
+// смена изображений с анимацией при наведении по дата-атрибуту
 $(document).ready(function () {
     $('.animation-table__text_links').hover(
         function () {
@@ -195,51 +195,56 @@ $(document).ready(function () {
             let linkOneC = $(this).attr("data-one-c");
             let linkPhone = $(this).attr("data-phone");
             let linkUser = $(this).attr("data-user");
-            $(this).addClass('hover');
             $('.animation-table-it__img_desktop').attr('src', linkFile);
-            $('.animation-table-it__img-left-direction').attr('src', linkServer);
+            $('.animation-table-it__img_desktop').animate({'opacity': 1}, 400);
+            $('.animation-table-it__img-left-direction_default-server').attr('src', linkServer);
+            $('.animation-table-it__img-left-direction_default-server').animate({'opacity': 1}, 400);
             $('.animation-table-it__img_default-administrate').attr('src', linkOneC);
+            $('.animation-table-it__img_default-administrate').animate({'opacity': 1}, 400);
             $('.animation-table-it__img-left-direction_phone-default').attr('src', linkPhone);
+            $('.animation-table-it__img-left-direction_phone-default').animate({'opacity': 1}, 400);
             $('.animation-table-it__img_default-user').attr('src', linkUser);
+            $('.animation-table-it__img_default-user').animate({'opacity': 1}, 400);
         },
         function () {
-            $(this).removeClass('hover');
             $('.animation-table-it__img_desktop').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/desktop-it.jpg');
-            $('.animation-table-it__img-left-direction').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/default-server.jpg');
+            $('.animation-table-it__img_desktop').animate({'opacity': 0}, 400);
+            $('.animation-table-it__img-left-direction_default-server').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/default-server.jpg');
+            $('.animation-table-it__img-left-direction_default-server').animate({'opacity': 0}, 400);
             $('.animation-table-it__img_default-administrate').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/1-c-default.jpg');
+            $('.animation-table-it__img_default-administrate').animate({'opacity': 0}, 400);
             $('.animation-table-it__img-left-direction_phone-default').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/phone-default.jpg');
+            $('.animation-table-it__img-left-direction_phone-default').animate({'opacity': 0}, 400);
             $('.animation-table-it__img_default-user').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/user-default.jpg');
+            $('.animation-table-it__img_default-user').animate({'opacity': 0}, 400);
         }
     );
 });
 
-// смена изображений при наведении по дата-атрибуту
+// смена изображений с анимацией при наведении по дата-атрибуту
 $(document).ready(function () {
     $('.design__body-text').hover(
         function () {
-            let linkTable = $(this).attr("data-table");
-            $(this).addClass('hover');
+            let linkTable = $(this).attr('data-table');
             $('.animation__img').attr('src', linkTable);
+            $('.animation__img').animate({'opacity': 1}, 400);
         },
         function () {
-            $(this).removeClass('hover');
             $('.animation__img').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/animation-main.jpg');
+            $('.animation__img').animate({'opacity': 0}, 400);
         }
     );
 });
 
-// смена текста при наведении
+// смена текста и его цвета при наведении
 $(document).ready(function () {
     $(".design__body-text").on('mouseover', function () {
             let text = $(this).html();
             $(".animation__text").html(text).show();
-            $('.animation__text').css('color', '#05d0df');
+            let colors = ['#05d0df', '#F9461F', '#012255', '#DB73FB', '#56C57C'];
+            $('.animation__text').css('color', () => colors.splice(Math.random() * colors.length | 0, 1)[0]);
         }
     );
-
-    $('.design__body-text').on('mouseleave', function () {
-        $('.animation__text').css('color', '#F9461F');
-    });
 });
 
 // открытие мобильного меню при клике на иконку бургер
@@ -261,7 +266,6 @@ $(document).ready(function () {
     });
 });
 
-
 // выделение активной карточки товара
 const cardsShop = document.querySelectorAll(".card-shop");
 const cardShop = document.querySelector('.card-shop');
@@ -279,26 +283,58 @@ for (let shop of cardsShop) {
 }
 
 // выделение активной карточки товара
-const priceTables = document.querySelectorAll(".price-table__section");
-const priceTable = document.querySelector('.price-table__section-multipage');
-if (priceTable) {
-    priceTable.classList.add('active');
+const priceTableLanding = document.querySelectorAll('.price-table__section-landing');
+const priceTableLand = document.querySelector('.price-table__section-landing');
+if (priceTableLand) {
+    priceTableLand.classList.add('active');
 }
-
-const priceTableLanding = document.querySelector('.price-table__section-landing');
-const priceTableSeo = document.querySelector('.price-table__section-seo');
-const priceTableBusiness = document.querySelector('.price-table__section-business');
-const arrayTables = [priceTableSeo, priceTableLanding, priceTableBusiness];
-
-for (let table of arrayTables) {
-    if (table) {
-        table.classList.add('active');
-    }
-}
-
-for (let table of priceTables) {
+for (let table of priceTableLanding) {
     table.addEventListener("click", function () {
-        for (let table of priceTables) {
+        for (let table of priceTableLanding) {
+            table.classList.remove('active');
+        }
+        this.classList.add('active');
+    });
+}
+
+const priceTableSeo = document.querySelectorAll('.price-table__section-seo');
+const priceTableS = document.querySelector('.price-table__section-seo');
+if (priceTableS) {
+    priceTableS.classList.add('active');
+}
+
+for (let table of priceTableSeo) {
+    table.addEventListener("click", function () {
+        for (let table of priceTableSeo) {
+            table.classList.remove('active');
+        }
+        this.classList.add('active');
+    });
+}
+
+const priceTableBusiness = document.querySelectorAll('.price-table__section-business');
+const priceTableBus = document.querySelector('.price-table__section-business');
+if (priceTableBus) {
+    priceTableBus.classList.add('active');
+}
+for (let table of priceTableBusiness) {
+    table.addEventListener("click", function () {
+        for (let table of priceTableBusiness) {
+            table.classList.remove('active');
+        }
+        this.classList.add('active');
+    });
+}
+
+const priceTableMultiPage = document.querySelectorAll('.price-table__section-multipage');
+const priceTableMulti = document.querySelector('.price-table__section-multipage');
+if (priceTableMulti) {
+    priceTableMulti.classList.add('active');
+}
+
+for (let table of priceTableMultiPage) {
+    table.addEventListener("click", function () {
+        for (let table of priceTableMultiPage) {
             table.classList.remove('active');
         }
         this.classList.add('active');
@@ -311,7 +347,6 @@ $(document).ready(function () {
         $('.popup').addClass('popup_opened');
     });
 });
-
 
 // закрытие модального окна при клике на крестик
 $(document).ready(function () {
@@ -376,9 +411,10 @@ window.onload = () => {
     }
 };
 
+// обертка для уведомления у формы обратной связи
 $(document).ready(function () {
     $('.wpcf7-response-output').wrap('<div class="wrap-output">');
-})
+});
 
 $('button').click(function () {
     let titlePage = $('.page-form').attr('data-page-title');
