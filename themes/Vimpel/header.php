@@ -27,9 +27,9 @@
 				<button class="header-info__button" type="button">
 					Получить консультацию
 				</button>
-				<a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer"
+				<a href="<?php the_field('header_link_inst', 'option'); ?>" target="_blank" rel="nofollow noreferrer"
 				   class="header-info__icon-container header-info__icon-container_inst"></a>
-				<a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer"
+				<a href="<?php the_field('header_link_vk', 'option'); ?>" target="_blank" rel="nofollow noreferrer"
 				   class="header-info__icon-container header-info__icon-container_vk"></a>
 			</nav>
 		</div>

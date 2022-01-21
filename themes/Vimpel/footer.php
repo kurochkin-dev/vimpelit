@@ -17,9 +17,9 @@
 			</a>
 		</div>
 		<div class="footer__icons-container">
-			<a href="https://www.instagram.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer"
+			<a href="<?php the_field('footer_link_inst', 'option'); ?>" target="_blank" rel="nofollow noreferrer"
 			   class="footer__icon footer__icon_inst"></a>
-			<a href="https://vk.com/vimpel_it_web/" target="_blank" rel="nofollow noreferrer"
+			<a href="<?php the_field('footer_link_vk', 'option'); ?>" target="_blank" rel="nofollow noreferrer"
 			   class="footer__icon footer__icon_vk"></a>
 		</div>
 	</div>
