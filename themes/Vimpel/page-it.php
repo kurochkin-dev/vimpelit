@@ -10,17 +10,24 @@ get_header();
 
 
 	<section class="it__image-container">
-		<h2 class="it__heading">IT СЕРВИС</h2>
+		<h1 class="it__heading">IT сервис</h1>
 		<button class="it__button" type="button">
 			Получить консультацию
 		</button>
 		<div class="it__bottom-container">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/mouse.svg" alt="Иконка мышки"
-				 class="it__mouse-icon"/>
+			<a href="#about-it" class="scrolldown">
+				<svg width="47" height="53" viewBox="0 0 47 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<ellipse class="roll" cx="31.5" cy="13.5" rx="2.5" ry="3.5" fill="white"/>
+					<rect class="mouse" x="16.5" y="0.5" width="30" height="52" rx="15" stroke="white"/>
+					<path class="down"
+						  d="M3.64645 41.3536C3.84171 41.5488 4.15829 41.5488 4.35355 41.3536L7.53553 38.1716C7.7308 37.9763 7.7308 37.6597 7.53553 37.4645C7.34027 37.2692 7.02369 37.2692 6.82843 37.4645L4 40.2929L1.17157 37.4645C0.976312 37.2692 0.659729 37.2692 0.464467 37.4645C0.269205 37.6597 0.269205 37.9763 0.464467 38.1716L3.64645 41.3536ZM3.5 17L3.5 41L4.5 41L4.5 17L3.5 17Z"
+						  fill="white"/>
+				</svg>
+			</a>
 			<p class="it__text">Прокрутите вниз</p>
 		</div>
 	</section>
-	<section class="about-it">
+	<section id="about-it" class="about-it">
 		<img class="about-it__img"
 			 src="<?php the_field('it-service_img'); ?>"
 			 alt="Иллюстрация об айти"/>
@@ -283,72 +290,6 @@ get_header();
 		</div>
 		<div class="catalog-page-form__form">
             <?php echo do_shortcode('[contact-form-7 id="62" title="Форма Разовые IT-услуги"]') ?>
-			<!--				<div class="catalog-page-form__form-container">-->
-			<!--					<div class="catalog-page-form__radio-container">-->
-			<!--						<p class="catalog-page-form__question">Как удобнее связаться с Вами?</p>-->
-			<!--						<div class="catalog-page-form__radio-buttons-container">-->
-			<!--							<div class="catalog-page-form__radio">-->
-			<!--								<input id="phoneInputItForm" type="radio" name="variant" value="Телефон" checked/>-->
-			<!--								<label for="phoneInputItForm">Телефон</label>-->
-			<!--							</div>-->
-			<!--							<div class="catalog-page-form__radio">-->
-			<!--								<input id="whatsAppInputItForm" type="radio" name="variant" value="WhatsApp"/>-->
-			<!--								<label for="whatsAppInputItForm">WhatsApp</label>-->
-			<!--							</div>-->
-			<!--							<div class="catalog-page-form__radio">-->
-			<!--								<input id="telegramInputItForm" type="radio" name="variant" value="Telegram"/>-->
-			<!--								<label for="telegramInputItForm">Telegram</label>-->
-			<!--							</div>-->
-			<!--						</div>-->
-			<!--					</div>-->
-			<!--					<div class="catalog-page-form__inputs-container">-->
-			<!--						<p class="catalog-page-form__inputs-heading">Оставьте заявку и получите консультацию-->
-			<!--							специалиста</p>-->
-			<!--						<div class="catalog-page-form__inputs-main-container">-->
-			<!--							<div class="catalog-page-form__input-container">-->
-			<!--								<input-->
-			<!--									type="text"-->
-			<!--									class="catalog-page-form__input"-->
-			<!--									id="it-name-input"-->
-			<!--									name="name"-->
-			<!--									value=""-->
-			<!--									minLength="2"-->
-			<!--									maxLength="50"-->
-			<!--									placeholder="Ваше имя"-->
-			<!--									pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"-->
-			<!--									required-->
-			<!--								/>-->
-			<!--								<span id="it-name-input-error" class="catalog-page-form-form__input_error"></span>-->
-			<!--							</div>-->
-			<!--							<div class="catalog-page-form__input-container">-->
-			<!--								<input-->
-			<!--									type="text"-->
-			<!--									class="catalog-page-form__input"-->
-			<!--									id="it-number-input"-->
-			<!--									name="number"-->
-			<!--									value=""-->
-			<!--									minLength="3"-->
-			<!--									maxLength="20"-->
-			<!--									placeholder="Ваш телефон"-->
-			<!--									pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$'-->
-			<!--									required-->
-			<!--								/>-->
-			<!--								<span id="it-number-input-error" class="catalog-page-form-form__input_error"></span>-->
-			<!--							</div>-->
-			<!--						</div>-->
-			<!--					</div>-->
-			<!--					<div class="catalog-page-form__submit-container">-->
-			<!--						<button type="submit" class="catalog-page-form__submit-button">Получить консультацию</button>-->
-			<!--						<div class="catalog-page-form__under-submit-button-container">-->
-			<!--							<img src="-->
-            <?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/check.svg"-->
-			<!--								 alt="Иконка галочки"-->
-			<!--								 class="catalog-page-form__under-submit-button-check"/>-->
-			<!--							<p class="catalog-page-form__under-submit-button-text">Принимаю пользовательское-->
-			<!--								соглашение</p>-->
-			<!--						</div>-->
-			<!--					</div>-->
-			<!--				</div>-->
 		</div>
 	</section>
 	<section class="price-table-it">

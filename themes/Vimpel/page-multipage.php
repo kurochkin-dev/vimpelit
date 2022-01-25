@@ -7,20 +7,23 @@ Template Name: Создание многостраничного (корпора
 <?php
 get_header();
 ?>
-
-
 	<div class="multipage">
 		<section class="multipage__image-container">
-			<h2 class="multipage__heading">создание многостраничного (корпоративного) сайта "под ключ"</h2>
+			<h1 class="multipage__heading">Создание многостраничного (корпоративного) сайта "под ключ"</h1>
 			<p class="multipage__subheading">Проектирование и разработка многостраничного сайта в Санкт-Петербурге</p>
 			<button class="multipage__button" type="button">Заказать сайт</button>
 			<div class="multipage__bottom-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/mouse.svg" alt="Иконка мышки"
-					 class="multipage__mouse-icon"/>
+				<a href="#multipage-info" class="scrolldown">
+					<svg width="47" height="53" viewBox="0 0 47 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<ellipse class="roll" cx="31.5" cy="13.5" rx="2.5" ry="3.5" fill="white"/>
+						<rect class="mouse" x="16.5" y="0.5" width="30" height="52" rx="15" stroke="white"/>
+						<path class="down" d="M3.64645 41.3536C3.84171 41.5488 4.15829 41.5488 4.35355 41.3536L7.53553 38.1716C7.7308 37.9763 7.7308 37.6597 7.53553 37.4645C7.34027 37.2692 7.02369 37.2692 6.82843 37.4645L4 40.2929L1.17157 37.4645C0.976312 37.2692 0.659729 37.2692 0.464467 37.4645C0.269205 37.6597 0.269205 37.9763 0.464467 38.1716L3.64645 41.3536ZM3.5 17L3.5 41L4.5 41L4.5 17L3.5 17Z" fill="white"/>
+					</svg>
+				</a>
 				<p class="multipage__text">Прокрутите вниз</p>
 			</div>
 		</section>
-		<section class="multipage-info">
+		<section id="multipage-info" class="multipage-info">
 			<div class="multipage-info__container">
 				<h3 class="multipage-info__heading"><?php the_field('multipage_title'); ?></h3>
 				<p class="multipage-info__description">
@@ -45,7 +48,7 @@ get_header();
 				</p>
 			</div>
 		</section>
-        <?php include 'section-page-form.php' ?>
+        <?php include 'inc/section-page-form.php' ?>
 		<div class="table">
 			<div class="animation">
 				<img alt="Изображение дизайна"
@@ -60,193 +63,6 @@ get_header();
 			</div>
 			<div class="table__container">
                 <?php the_field('multipage_tables'); ?>
-				<!--			<table class="design">-->
-				<!--				<thead class="design__head">-->
-				<!--				<tr class="design__head-container">-->
-				<!--					<th class="design__head-item design__head-item_main">Дизайн</th>-->
-				<!--					<th class="design__head-item">до 15 страниц</th>-->
-				<!--					<th class="design__head-item">до 25 страниц</th>-->
-				<!--					<th class="design__head-item">до 25 страниц "под ключ"</th>-->
-				<!--				</tr>-->
-				<!--				</thead>-->
-				<!--				<tbody class="design__body">-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td data-table="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/animation-design.jpg" class="design__body-text">-->
-				<!--					Уникальный дизайн для всех страниц-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-text design__body-text_center">по 2-3 эскиза</td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td data-table="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/animation-form.jpg" class="design__body-text">-->
-				<!--					Форма обратной связи-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-text design__body-text_center">до 4 различных форм</td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td data-table="-->
-                <?php //echo get_template_directory_uri(); ?><!--/assets/images/animation-slider.jpg" class="design__body-text">-->
-				<!--					Слайдер с УТП (спец предложение)-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td data-table="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/animation-map.jpg" class="design__body-text">-->
-				<!--					Карта проезда-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td data-table="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/animation-adaptive.jpg" class="design__body-text">-->
-				<!--					Адаптивная (резиновая) верстка под планшеты и телефоны-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td data-table="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/animation-media.jpg" class="design__body-text">-->
-				<!--					Медиагалерея (фото и видео)-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td data-table="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/animation-advertis.jpg" class="design__body-text">-->
-				<!--					Разработка рекламного баннера-->
-				<!--					</td>-->
-				<!--					<td class="design__body-text"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				</tbody>-->
-				<!--			</table>-->
-				<!--			<table class="design">-->
-				<!--				<thead class="design__head">-->
-				<!--				<tr class="design__head-container">-->
-				<!--					<th class="design__head-item design__head-item_dev">Разработка</th>-->
-				<!--					<th class="design__head-item">до 15 страниц</th>-->
-				<!--					<th class="design__head-item">до 25 страниц</th>-->
-				<!--					<th class="design__head-item">до 25 страниц "под ключ"</th>-->
-				<!--				</tr>-->
-				<!--				</thead>-->
-				<!--				<tbody class="design__body">-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Система управления сайтом-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Почтовый ящик с доменным именем-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Составление семантического ядра-->
-				<!--					</td>-->
-				<!--					<td class="design__body-text design__body-text_center">по 1 направлению</td>-->
-				<!--					<td class="design__body-text design__body-text_center">по 2 направлениям</td>-->
-				<!--					<td class="design__body-text design__body-text_center">по 3 направлениям</td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Кроссбраузерная верстка (кроме Safari и IE ниже 11 версии)-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Интеграция с соцсетями-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Онлайн консультант (JivoSite)-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Уникальные программируемые динамические блоки-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Реализация кода страниц любой сложности-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Подключение CRM системы-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Установка и настройка Я.Метрики и G.Analitics-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text">-->
-				<!--					Наполнение сайта контентом-->
-				<!--					</td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"></td>-->
-				<!--					<td class="design__body-img"><img src="http://vimpelitwp/wp-content/themes/Vimpel/assets/images/svg/vector.svg" alt="Иконка галочки" /></td>-->
-				<!--				</tr>-->
-				<!--				</tbody>-->
-				<!--			</table>-->
-				<!--			<table class="design">-->
-				<!--				<thead class="design__head">-->
-				<!--				<tr class="design__head-container">-->
-				<!--					<th class="design__head-item design__head-item_time">Время выполнения</th>-->
-				<!--					<th class="design__head-item">45 дней</th>-->
-				<!--					<th class="design__head-item">60 дней</th>-->
-				<!--					<th class="design__head-item">75 дней</th>-->
-				<!--				</tr>-->
-				<!--				</thead>-->
-				<!--				<tbody class="design__body">-->
-				<!--				<tr class="design__body-container">-->
-				<!--					<td class="design__body-text design__body-text_pay">Оплата в 2 этапа (предоплата 50%)</td>-->
-				<!--					<td class="design__body-text design__body-text_center design__body-text_value">99 000 руб.</td>-->
-				<!--					<td class="design__body-text design__body-text_center design__body-text_value">150 000 руб.</td>-->
-				<!--					<td class="design__body-text design__body-text_center design__body-text_value">200 000 руб.</td>-->
-				<!--				</tr>-->
-				<!--				</tbody>-->
-				<!--			</table>-->
 			</div>
 		</div>
 	</div>

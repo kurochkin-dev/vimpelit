@@ -12,12 +12,12 @@ get_header();
         <section class="stroj-snab__image">
             <div class="stroj-snab__overlay-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/stroi-snab-icon.svg" alt="Иконка Строй Снаб" class="stroj-snab__icon" />
-                <h2 class="stroj-snab__heading">СтройСнаб</h2>
+                <h1 class="stroj-snab__heading">СтройСнаб</h1>
                 <p class="stroj-snab__subheading">Компания осуществляет строительные работы</p>
             </div>
         </section>
         <section class="about">
-            <h3 class="about__heading">О ПРОЕКТЕ</h3>
+            <h3 class="about__heading">О проекте</h3>
             <div class="about__container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/stroi-snab-about-img.jpg" alt="Фотография" class="about__img" />
                 <div class="about__text-container">
@@ -37,7 +37,7 @@ get_header();
                 </div>
             </div>
         </section>
-        <?php include 'section-stages.php'?>
+        <?php include 'inc/section-stages.php' ?>
         <section class="colors">
             <div class="colors__main-container">
                 <h3 class="colors__heading">ЦВЕТА И ИКОНКИ</h3>

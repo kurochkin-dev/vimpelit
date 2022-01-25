@@ -10,16 +10,23 @@ get_header();
 
 	<div class="price-web">
 		<section class="price-web__image-container">
-			<h2 class="price-web__heading">цены на услуги web студии</h2>
+			<h1 class="price-web__heading">Цены на услуги web студии</h1>
 			<p class="price-web__subheading">Ознакомьтесь с перечнем наших услуг, а также их стоимостью</p>
 			<button class="price-web__button" type="button">Получить консультацию</button>
 			<div class="price-web__bottom-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/mouse.svg" alt="Иконка мышки"
-					 class="price-web__mouse-icon"/>
+				<a href="#price-table-shop" class="scrolldown">
+					<svg width="47" height="53" viewBox="0 0 47 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<ellipse class="roll" cx="31.5" cy="13.5" rx="2.5" ry="3.5" fill="white"/>
+						<rect class="mouse" x="16.5" y="0.5" width="30" height="52" rx="15" stroke="white"/>
+						<path class="down"
+							  d="M3.64645 41.3536C3.84171 41.5488 4.15829 41.5488 4.35355 41.3536L7.53553 38.1716C7.7308 37.9763 7.7308 37.6597 7.53553 37.4645C7.34027 37.2692 7.02369 37.2692 6.82843 37.4645L4 40.2929L1.17157 37.4645C0.976312 37.2692 0.659729 37.2692 0.464467 37.4645C0.269205 37.6597 0.269205 37.9763 0.464467 38.1716L3.64645 41.3536ZM3.5 17L3.5 41L4.5 41L4.5 17L3.5 17Z"
+							  fill="white"/>
+					</svg>
+				</a>
 				<p class="price-web__text">Прокрутите вниз</p>
 			</div>
 		</section>
-		<h3 class="price-web__tables-heading">СТОИМОСТЬ УСЛУГ</h3>
+		<h3 id="price-table-shop" class="price-web__tables-heading">СТОИМОСТЬ УСЛУГ</h3>
 		<h4 class="price-web__table-heading">ИНТЕРНЕТ-МАГАЗИН</h4>
 		<section class="price-table-shop">
 			<div class="price-table-shop__main-container">
@@ -51,7 +58,7 @@ get_header();
                     <?php if (get_field('web-price_cards_two')): ?>
                         <?php while (has_sub_field('web-price_cards_two')) : ?>
                             <?php
-                            $title = get_sub_field('web-price_card_two');
+                            $title = get_sub_field('web-price_card_title_two');
                             $price = get_sub_field('web-price_card_price_two');
                             ?>
 							<div class="card-shop">
@@ -73,13 +80,13 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<h4 class="price-web__table-heading">САЙТ-ВИЗИТКА</h4>
-        <?php include 'section-business-card.php' ?>
-		<h4 class="price-web__table-heading">LANDING PAGE</h4>
-        <?php include 'section-landing.php' ?>
-		<h4 class="price-web__table-heading">SEO-УСЛУГИ</h4>
-        <?php include 'section-seo.php' ?>
-		<h4 class="price-web__table-heading">МНОГОСТРАНИЧНЫЙ (КОРПОРАТИВНЫЙ) САЙТ</h4>
+		<h4 class="price-web__table-heading">Сайт-визитка</h4>
+        <?php include 'inc/section-business-card.php' ?>
+		<h4 class="price-web__table-heading">Landing Page</h4>
+        <?php include 'inc/section-landing.php' ?>
+		<h4 class="price-web__table-heading">Seo-услуги</h4>
+        <?php include 'inc/section-seo.php' ?>
+		<h4 class="price-web__table-heading">Многостраничный (корпоративный) сайт</h4>
 		<section class="price-table-multipage">
 			<div class="price-table-multipage__container price-table-multipage__container_web">
                 <?php if (get_field('web-price_cards_three')): ?>
@@ -105,12 +112,12 @@ get_header();
 				<p class="price-web__table-description">*Оплата осуществляется в 2 этапа (предоплата 50%)</p>
 			</div>
 		</section>
-		<h4 class="price-web__table-heading">САЙТ-КАТАЛОГ</h4>
+		<h4 class="price-web__table-heading">Сайт-каталог</h4>
 		<section class="price-table-catalog">
 			<div class="price-table-catalog__container">
 				<div class="price-table-catalog__container-first">
 					<h5 class="price-table-catalog__heading">
-						<?php the_field('web-price_title'); ?><br>
+                        <?php the_field('web-price_title'); ?><br>
 						<span class="price-table-catalog__cost"><?php the_field('web-price_price'); ?></span>
 					</h5>
 				</div>

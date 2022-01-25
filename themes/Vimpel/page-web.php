@@ -10,20 +10,24 @@ get_header();
 
 	<div class="web">
 		<section class="web__image-container">
-			<h2 class="web__heading">WEB СТУДИЯ</h2>
+			<h1 class="web__heading">WEB студия</h1>
 			<button class="web__button" type="button">
 				Получить консультацию
 			</button>
 			<div class="web__bottom-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/mouse.svg" alt="Иконка мышки"
-					 class="web__mouse-icon"/>
+				<a href="#services" class="scrolldown">
+					<svg width="47" height="53" viewBox="0 0 47 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<ellipse class="roll" cx="31.5" cy="13.5" rx="2.5" ry="3.5" fill="white"/>
+						<rect class="mouse" x="16.5" y="0.5" width="30" height="52" rx="15" stroke="white"/>
+						<path class="down" d="M3.64645 41.3536C3.84171 41.5488 4.15829 41.5488 4.35355 41.3536L7.53553 38.1716C7.7308 37.9763 7.7308 37.6597 7.53553 37.4645C7.34027 37.2692 7.02369 37.2692 6.82843 37.4645L4 40.2929L1.17157 37.4645C0.976312 37.2692 0.659729 37.2692 0.464467 37.4645C0.269205 37.6597 0.269205 37.9763 0.464467 38.1716L3.64645 41.3536ZM3.5 17L3.5 41L4.5 41L4.5 17L3.5 17Z" fill="white"/>
+					</svg>
+				</a>
 				<p class="web__text">Прокрутите вниз</p>
 			</div>
 		</section>
-		<section class="services">
+		<section id="services" class="services">
 			<h3 class="services__heading"><?php the_field('web_page_type_of_sites_title_one'); ?></h3>
 			<div class="grid">
-
                 <?php if (have_rows('web_page_type_of_sites')): ?>
                     <?php while (have_rows('web_page_type_of_sites')): the_row();
                         $title = get_sub_field('web_page_type_of_site_subtitle');
@@ -37,7 +41,7 @@ get_header();
                 <?php endif; ?>
 			</div>
 		</section>
-        <?php include 'section-stages.php' ?>
+        <?php include 'inc/section-stages.php' ?>
 		<section class="history-web">
 			<div class="history-web__container">
 				<h3 class="history-web__heading"><?php the_field('web_page_history_title'); ?></h3>
@@ -62,20 +66,19 @@ get_header();
 				 alt="Иллюстрация совещания"/>
 		</section>
         <?php
-        include 'section-page-form.php';
+        include 'inc/section-page-form.php';
         ?>
 		<section class="portfolio-slider">
 			<div class="portfolio-slider__container">
-				<h2 class="portfolio-slider__heading">НАШИ ПОСЛЕДНИЕ РАБОТЫ</h2>
+				<h2 class="portfolio-slider__heading">Наши последние работы</h2>
 				<div class="portfolio-slider__wrap">
-
                     <?php if (have_rows('web_page_slides')): ?>
                         <?php while (have_rows('web_page_slides')): the_row();
-							$link = get_sub_field('web_page_slide_link');
-							$classForLink = get_sub_field('web_page_slide_class_link');
-							$img = get_sub_field('web_page_slide_img');
-							$classForOverlay = get_sub_field('web_page_slide_class_overlay');
-							$title = get_sub_field('web_page_slide_title');
+                            $link = get_sub_field('web_page_slide_link');
+                            $classForLink = get_sub_field('web_page_slide_class_link');
+                            $img = get_sub_field('web_page_slide_img');
+                            $classForOverlay = get_sub_field('web_page_slide_class_overlay');
+                            $title = get_sub_field('web_page_slide_title');
                             $desc = get_sub_field('web_page_slide_desc');
                             ?>
 							<a href="<?php echo $link; ?>" class="carousel__container <?php echo $classForLink; ?>">
@@ -89,65 +92,6 @@ get_header();
 							</a>
                         <?php endwhile; ?>
                     <?php endif; ?>
-
-
-<!--					<a href="/stroj-snab" class="carousel__container carousel__container_stroj-snab">-->
-<!--						<div class="carousel-overlay">-->
-<!--							<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/stroi-snab-icon.svg"-->
-<!--								 alt="Иконка Строй Снаб"-->
-<!--								 class="carousel-overlay__icon carousel-overlay__icon_stroi-snab"/>-->
-<!--							<h3 class="carousel-overlay__heading">СтройСнаб</h3>-->
-<!--							<p class="carousel-overlay__subheading">Компания осуществляет строительные работы</p>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<a href="/voleks" class="carousel__container carousel__container_voleks">-->
-<!--						<div class="carousel-overlay">-->
-<!--							<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/voleks-icon.svg"-->
-<!--								 alt="Иконка Волекс" class="carousel-overlay__icon carousel-overlay__icon_voleks"/>-->
-<!--							<h3 class="carousel-overlay__heading">Волекс</h3>-->
-<!--							<p class="carousel-overlay__subheading">Продажа промышленного инструмента абразивных-->
-<!--								материалов</p>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<a href="/ar-bellos" class="carousel__container carousel__container_ar-bellos">-->
-<!--						<div class="carousel-overlay">-->
-<!--							<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/arbellos-icon.svg"-->
-<!--								 alt="Иконка Арбеллос" class="carousel-overlay__icon carousel-overlay__icon_arbellos"/>-->
-<!--							<h3 class="carousel-overlay__heading">ARbellos</h3>-->
-<!--							<p class="carousel-overlay__subheading">Инсталяция светопрозрачных решений</p>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<a href="/yur-konsul" class="carousel__container carousel__container_yur-konsul">-->
-<!--						<div class="carousel-overlay">-->
-<!--							<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/ur-consul-icon.svg"-->
-<!--								 alt="Иконка Юр Консул"-->
-<!--								 class="carousel-overlay__icon carousel-overlay__icon_ur-konsul"/>-->
-<!--							<h3 class="carousel-overlay__heading">ЮрКонсул</h3>-->
-<!--							<p class="carousel-overlay__subheading">Реализация деятельности ТСН(Ж), ЖСК и УК по-->
-<!--								управлению недвижимым имуществом</p>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<a href="/ost-med-consult" class="carousel__container carousel__container_ost-med-consult">-->
-<!--						<div class="carousel-overlay">-->
-<!--							<img-->
-<!--								src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/ost-med-consalt-icon.svg"-->
-<!--								alt="Иконка Ост Мед Консалт"-->
-<!--								class="carousel-overlay__icon carousel-overlay__icon_ost-meb-consalt"/>-->
-<!--							<h3 class="carousel-overlay__heading">Остмедконсалт</h3>-->
-<!--							<p class="carousel-overlay__subheading">Многопрофильная клиника: эстетическая медицина и-->
-<!--								пластическая хирургия</p>-->
-<!--						</div>-->
-<!--					</a>-->
-<!--					<a href="/la-mia-borsa" class="carousel__container carousel__container_la-mia-borsa">-->
-<!--						<div class="carousel-overlay">-->
-<!--							<img-->
-<!--								src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/la-mia-borsa-icon.svg"-->
-<!--								alt="Иконка Ля Миа Борса"-->
-<!--								class="carousel-overlay__icon carousel-overlay__icon_la-mia-borsa"/>-->
-<!--							<h3 class="carousel-overlay__heading">La mia Borsa</h3>-->
-<!--							<p class="carousel-overlay__subheading">Итальянские сумки в <br/> Санкт-Петербурге</p>-->
-<!--						</div>-->
-<!--					</a>-->
 				</div>
 			</div>
 		</section>

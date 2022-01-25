@@ -12,12 +12,12 @@ get_header();
         <section class="yur-konsul__image">
             <div class="yur-konsul__overlay-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/ur-consul-icon.svg" alt="Иконка Строй Снаб" class="yur-konsul__icon" />
-                <h2 class="yur-konsul__heading">ЮрКонсул</h2>
-                <p class="yur-konsul__subheading">Реализация деятельности ТСН(Ж),  ЖСК и УК по управлению недвижимым имуществом</p>
+                <h1 class="yur-konsul__heading">ЮрКонсул</h1>
+                <p class="yur-konsul__subheading">Реализация деятельности ТСН(Ж), ЖСК и УК по управлению недвижимым имуществом</p>
             </div>
         </section>
         <section class="about">
-            <h3 class="about__heading">О ПРОЕКТЕ</h3>
+            <h3 class="about__heading">О проекте</h3>
             <div class="about__container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/ur-konsul-about-img.jpg" alt="Фотография" class="about__img about__img_yur-konsul" />
                 <div class="about__text-container about__text-container_yur-konsul">
@@ -32,10 +32,10 @@ get_header();
                 </div>
             </div>
         </section>
-        <?php include 'section-stages.php'?>
+        <?php include 'inc/section-stages.php' ?>
         <section class="colors">
             <div class="colors__main-container">
-                <h3 class="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                <h3 class="colors__heading">Цвета и иконки</h3>
                 <div class="colors__content-container">
                     <div class="colors__container">
                         <div class="colors__square-container">
@@ -79,7 +79,7 @@ get_header();
             </div>
         </section>
         <section class="typography">
-            <h3 class="typography__header">ТИПОГРАФИКА</h3>
+            <h3 class="typography__header">Типографика</h3>
             <div class="typography__container">
                 <p class="typography__letter-main">Aa</p>
                 <div class="typography__roboto-container">
@@ -92,7 +92,7 @@ get_header();
         <section class="adaptive-yur-konsul">
             <div class="adaptive-yur-konsul__img"></div>
             <div class="adaptive-yur-konsul__info-container">
-                <h3 class="adaptive-yur-konsul__heading">АДАПТИВНЫЙ ДИЗАЙН</h3>
+                <h3 class="adaptive-yur-konsul__heading">Адаптивный дизайн</h3>
                 <p class="adaptive-yur-konsul__description">
                     Все наши сайты можно просматривать на самых разных устройствах,
                     таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана.

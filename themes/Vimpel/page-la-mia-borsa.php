@@ -13,7 +13,7 @@ get_header();
         <section class="la-mia-borsa__image">
             <div class="la-mia-borsa__overlay-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/la-mia-borsa-icon.svg" alt="Иконка La mia Borsa" class="la-mia-borsa__icon" />
-                <h2 class="la-mia-borsa__heading">La mia Borsa</h2>
+                <h1 class="la-mia-borsa__heading">La mia Borsa</h1>
                 <p class="la-mia-borsa__subheading">Итальянские сумки в Санкт-Петербурге</p>
             </div>
         </section>
@@ -39,7 +39,7 @@ get_header();
                 </div>
             </div>
         </section>
-        <?php include 'section-stages.php'?>
+        <?php include 'inc/section-stages.php' ?>
         <section class="colors">
             <div class="colors__main-container">
                 <h3 class="colors__heading">ЦВЕТА И ИКОНКИ</h3>

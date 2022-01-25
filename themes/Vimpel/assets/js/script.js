@@ -1,8 +1,8 @@
 'use strict';
 
 // слайдер
-$(document).ready(function () {
-    $('.portfolio-slider__wrap').slick({
+jQuery(document).ready(function () {
+    jQuery('.portfolio-slider__wrap').slick({
         dots: false,
         infinite: true,
         speed: 500,
@@ -29,7 +29,6 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "90px",
                 }
@@ -40,7 +39,6 @@ $(document).ready(function () {
                     arrows: false,
                     slidesToShow: 1,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "90px",
                 }
@@ -51,7 +49,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "120px",
                 }
@@ -62,7 +59,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "100px",
                 }
@@ -73,7 +69,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "85px",
                 }
@@ -84,7 +79,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "65px",
                 }
@@ -95,7 +89,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "50px",
                 }
@@ -106,7 +99,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "35px",
                 }
@@ -117,7 +109,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "30px",
                 }
@@ -128,7 +119,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "25px",
                 }
@@ -139,7 +129,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "20px",
                 }
@@ -150,7 +139,6 @@ $(document).ready(function () {
                     slidesToShow: 1,
                     arrows: false,
                     swipe: true,
-                    // className: "center",
                     centerMode: true,
                     centerPadding: "15px",
                 }
@@ -160,109 +148,116 @@ $(document).ready(function () {
 });
 
 // меню в хедере
-$(document).ready(function () {
-    $('.menu-item-535, .menu-item-536, .menu-item-537, .menu-item-528, .menu-item-527, .menu-item-529, .menu-item-518').wrapAll('<div class="drop-down-menu__container">');
-    $('.menu-item-538, .menu-item-539, .menu-item-540').wrapAll('<div class="drop-down-menu__container">');
-    $('.menu-item-524, .menu-item-532').wrap('<div class="drop-down-menu-portfolio__container">');
-    $('.menu-item-523, .menu-item-531').wrap('<div class="drop-down-menu-portfolio__container drop-down-menu-portfolio__container_it">');
+jQuery(document).ready(function () {
+    jQuery('.menu-item-535, .menu-item-536, .menu-item-537, .menu-item-528, .menu-item-527, .menu-item-529, .menu-item-518').wrapAll('<div class="drop-down-menu__container">');
+    jQuery('.menu-item-538, .menu-item-539, .menu-item-540').wrapAll('<div class="drop-down-menu__container">');
+    jQuery('.menu-item-524, .menu-item-532').wrap('<div class="drop-down-menu-portfolio__container">');
+    jQuery('.menu-item-523, .menu-item-531').wrap('<div class="drop-down-menu-portfolio__container drop-down-menu-portfolio__container_it">');
 });
 
 // мобильное меню
-$(document).ready(function () {
-    $('.menu-item-543 a').attr('id', 'it-service').addClass('mobile-navigation__links mobile-navigation__links_menu');
-    $('.menu-item-543 .sub-menu').wrapAll('<div class="drop-down__block it-service">');
-    $('.drop-down__block .sub-menu').addClass('navigation__list navigation__list-dropdown');
+jQuery(document).ready(function () {
+    let dropDown = jQuery('.drop-down__block .sub-menu');
+    jQuery('.menu-item-543 a').attr('id', 'it-service').addClass('mobile-navigation__links mobile-navigation__links_menu');
+    jQuery('.menu-item-543 .sub-menu').wrapAll('<div class="drop-down__block it-service">');
+    dropDown.addClass('navigation__list navigation__list-dropdown');
 
-    $('.menu-item-546 a').attr('id', 'web-studio').addClass('mobile-navigation__links mobile-navigation__links_menu');
-    $('.menu-item-546 .sub-menu').wrapAll('<div class="drop-down__block web-studio">');
-    $('.drop-down__block .sub-menu').addClass('navigation__list navigation__list-dropdown');
+    jQuery('.menu-item-546 a').attr('id', 'web-studio').addClass('mobile-navigation__links mobile-navigation__links_menu');
+    jQuery('.menu-item-546 .sub-menu').wrapAll('<div class="drop-down__block web-studio">');
+    dropDown.addClass('navigation__list navigation__list-dropdown');
 
-    $('.menu-item-554 a').attr('id', 'portfolio').addClass('mobile-navigation__links mobile-navigation__links_menu');
-    $('.menu-item-554 .sub-menu').wrapAll('<div class="drop-down__block portfolio">');
-    $('.drop-down__block .sub-menu').addClass('navigation__list navigation__list-dropdown');
+    jQuery('.menu-item-554 a').attr('id', 'portfolio').addClass('mobile-navigation__links mobile-navigation__links_menu');
+    jQuery('.menu-item-554 .sub-menu').wrapAll('<div class="drop-down__block portfolio">');
+    dropDown.addClass('navigation__list navigation__list-dropdown');
 
-    $('.menu-item-557 a').attr('id', 'priceService').addClass('mobile-navigation__links mobile-navigation__links_menu');
-    $('.menu-item-557 .sub-menu').wrapAll('<div class="drop-down__block price-service">');
-    $('.drop-down__block .sub-menu').addClass('navigation__list navigation__list-dropdown');
+    jQuery('.menu-item-557 a').attr('id', 'priceService').addClass('mobile-navigation__links mobile-navigation__links_menu');
+    jQuery('.menu-item-557 .sub-menu').wrapAll('<div class="drop-down__block price-service">');
+    dropDown.addClass('navigation__list navigation__list-dropdown');
 });
 
 // смена изображений с анимацией при наведении по дата-атрибуту
-$(document).ready(function () {
-    $('.animation-table__text_links').hover(
+jQuery(document).ready(function () {
+    let animationDesktop = jQuery('.animation-table-it__img_desktop');
+    let animationServer = jQuery('.animation-table-it__img-left-direction_default-server');
+    let animationAdministrate = jQuery('.animation-table-it__img_default-administrate');
+    let animationPhone = jQuery('.animation-table-it__img-left-direction_phone-default');
+    let animationUser = jQuery('.animation-table-it__img_default-user');
+    jQuery('.animation-table__text_links').hover(
         function () {
-            let linkFile = $(this).attr("data-filename");
-            let linkServer = $(this).attr("data-server");
-            let linkOneC = $(this).attr("data-one-c");
-            let linkPhone = $(this).attr("data-phone");
-            let linkUser = $(this).attr("data-user");
-            $('.animation-table-it__img_desktop').attr('src', linkFile);
-            $('.animation-table-it__img_desktop').animate({'opacity': 1}, 400);
-            $('.animation-table-it__img-left-direction_default-server').attr('src', linkServer);
-            $('.animation-table-it__img-left-direction_default-server').animate({'opacity': 1}, 400);
-            $('.animation-table-it__img_default-administrate').attr('src', linkOneC);
-            $('.animation-table-it__img_default-administrate').animate({'opacity': 1}, 400);
-            $('.animation-table-it__img-left-direction_phone-default').attr('src', linkPhone);
-            $('.animation-table-it__img-left-direction_phone-default').animate({'opacity': 1}, 400);
-            $('.animation-table-it__img_default-user').attr('src', linkUser);
-            $('.animation-table-it__img_default-user').animate({'opacity': 1}, 400);
+            let linkFile = jQuery(this).attr("data-filename");
+            let linkServer = jQuery(this).attr("data-server");
+            let linkOneC = jQuery(this).attr("data-one-c");
+            let linkPhone = jQuery(this).attr("data-phone");
+            let linkUser = jQuery(this).attr("data-user");
+
+            animationDesktop.attr('src', linkFile);
+            animationDesktop.animate({'opacity': 1}, 400);
+            animationServer.attr('src', linkServer);
+            animationServer.animate({'opacity': 1}, 400);
+            animationAdministrate.attr('src', linkOneC);
+            animationAdministrate.animate({'opacity': 1}, 400);
+            animationPhone.attr('src', linkPhone);
+            animationPhone.animate({'opacity': 1}, 400);
+            animationUser.attr('src', linkUser);
+            animationUser.animate({'opacity': 1}, 400);
         },
         function () {
-            $('.animation-table-it__img_desktop').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/desktop-it.jpg');
-            $('.animation-table-it__img_desktop').animate({'opacity': 0}, 400);
-            $('.animation-table-it__img-left-direction_default-server').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/default-server.jpg');
-            $('.animation-table-it__img-left-direction_default-server').animate({'opacity': 0}, 400);
-            $('.animation-table-it__img_default-administrate').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/1-c-default.jpg');
-            $('.animation-table-it__img_default-administrate').animate({'opacity': 0}, 400);
-            $('.animation-table-it__img-left-direction_phone-default').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/phone-default.jpg');
-            $('.animation-table-it__img-left-direction_phone-default').animate({'opacity': 0}, 400);
-            $('.animation-table-it__img_default-user').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/user-default.jpg');
-            $('.animation-table-it__img_default-user').animate({'opacity': 0}, 400);
+            animationDesktop.attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/desktop-it.jpg');
+            animationDesktop.animate({'opacity': 0}, 400);
+            animationServer.attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/default-server.jpg');
+            animationServer.animate({'opacity': 0}, 400);
+            animationAdministrate.attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/1-c-default.jpg');
+            animationAdministrate.animate({'opacity': 0}, 400);
+            animationPhone.attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/phone-default.jpg');
+            animationPhone.animate({'opacity': 0}, 400);
+            animationUser.attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/user-default.jpg');
+            animationUser.animate({'opacity': 0}, 400);
         }
     );
 });
 
 // смена изображений с анимацией при наведении по дата-атрибуту
-$(document).ready(function () {
-    $('.design__body-text').hover(
+jQuery(document).ready(function () {
+    let animationImg = jQuery('.animation__img');
+    jQuery('.design__body-text').hover(
         function () {
-            let linkTable = $(this).attr('data-table');
-            $('.animation__img').attr('src', linkTable);
-            $('.animation__img').animate({'opacity': 1}, 400);
+            let linkTable = jQuery(this).attr('data-table');
+            animationImg.attr('src', linkTable);
+            animationImg.animate({'opacity': 1}, 400);
         },
         function () {
-            $('.animation__img').attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/animation-main.jpg');
-            $('.animation__img').animate({'opacity': 0}, 400);
+            animationImg.attr('src', 'http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/animation-main.jpg');
+            animationImg.animate({'opacity': 0}, 400);
         }
     );
 });
 
 // смена текста и его цвета при наведении
-$(document).ready(function () {
-    $(".design__body-text").on('mouseover', function () {
-            let text = $(this).html();
-            $(".animation__text").html(text).show();
+jQuery(document).ready(function () {
+    jQuery(".design__body-text").on('mouseover', function () {
+            let text = jQuery(this).html();
+            jQuery(".animation__text").html(text).show();
             let colors = ['#05d0df', '#F9461F', '#012255', '#DB73FB', '#56C57C'];
-            $('.animation__text').css('color', () => colors.splice(Math.random() * colors.length | 0, 1)[0]);
+            jQuery('.animation__text').css('color', () => colors.splice(Math.random() * colors.length | 0, 1)[0]);
         }
     );
 });
 
 // открытие мобильного меню при клике на иконку бургер
-$(document).ready(function () {
-    $(".mobile-header__menu-button").click(function () {
-        let mobileNav = $('.mobile-navigation');
-        let mobileBtn = $('.mobile-header__menu-button');
+jQuery(document).ready(function () {
+    jQuery(".mobile-header__menu-button").click(function () {
+        let mobileNav = jQuery('.mobile-navigation');
         mobileNav.toggleClass('mobile-navigation_opened');
     });
 });
 
 // смена иконки бургер/крестик при открытии/закрытии
-$(document).ready(function () {
-    $(".mobile-header__menu-button").bind("click", function () {
-        let src = ($(this).attr("src") === "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/burger-menu-button.svg")
+jQuery(document).ready(function () {
+    jQuery(".mobile-header__menu-button").bind("click", function () {
+        let src = (jQuery(this).attr("src") === "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/burger-menu-button.svg")
             ? "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/mobile-navigation-close-button.svg"
             : "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/burger-menu-button.svg";
-        $(this).attr("src", src);
+        jQuery(this).attr("src", src);
     });
 });
 
@@ -342,31 +337,32 @@ for (let table of priceTableMultiPage) {
 }
 
 // при клике на кнопки открытие попап формы обратной связи
-$(document).ready(function () {
-    $('.header-info__button, .it__button, .web__button, .price-web__button, .price-it__button, .shop__button, .landing__button, .business-card__button, .multipage__button, .catalog__button, .seo__button').click(function () {
-        $('.popup').addClass('popup_opened');
+jQuery(document).ready(function () {
+    jQuery('.header-info__button, .it__button, .web__button, .price-web__button, .price-it__button, .shop__button, .landing__button, .business-card__button, .multipage__button, .catalog__button, .seo__button').click(function () {
+        jQuery('.popup').addClass('popup_opened');
     });
 });
 
 // закрытие модального окна при клике на крестик
-$(document).ready(function () {
-    $('.popup__close-button').click(function () {
-        $('.popup').removeClass('popup_opened');
+jQuery(document).ready(function () {
+    jQuery('.popup__close-button').click(function () {
+        jQuery('.popup').removeClass('popup_opened');
     });
 });
 
 
 //при открытии формы из хедера на маленьком разрешении сворачивается меню и меняется кнопка закрытия на бургер
-$(document).ready(function () {
+jQuery(document).ready(function () {
+    let mobileButton = jQuery('.mobile-header__menu-button');
     if (document.documentElement.clientWidth < 931) {
-        $('.mobile-navigation__button').click(function () {
-            $('.mobile-navigation').removeClass('mobile-navigation_opened');
-            $('.popup').addClass('popup_opened');
+        jQuery('.mobile-navigation__button').click(function () {
+            jQuery('.mobile-navigation').removeClass('mobile-navigation_opened');
+            jQuery('.popup').addClass('popup_opened');
 
-            let src = ($('.mobile-header__menu-button').attr("src") === "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/mobile-navigation-close-button.svg")
+            let src = (mobileButton.attr("src") === "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/mobile-navigation-close-button.svg")
                 ? "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/burger-menu-button.svg"
                 : "http://178spbwp.loc/wp-content/themes/Vimpel/assets/images/svg/mobile-navigation-close-button.svg";
-            $('.mobile-header__menu-button').attr("src", src);
+            mobileButton.attr("src", src);
 
         });
     }
@@ -375,7 +371,7 @@ $(document).ready(function () {
 
 //мобильное меню
 window.onload = () => {
-    $('.web-studio, .it-service, .portfolio, .price-service').hide();
+    jQuery('.web-studio, .it-service, .portfolio, .price-service').hide();
     let itService = document.querySelector('#it-service');
     let webStudio = document.querySelector('#web-studio');
     let portfolio = document.querySelector('#portfolio');
@@ -412,31 +408,33 @@ window.onload = () => {
 };
 
 // обертка для уведомления у формы обратной связи
-$(document).ready(function () {
-    $('.wpcf7-response-output').wrap('<div class="wrap-output">');
+jQuery(document).ready(function () {
+    jQuery('.wpcf7-response-output').wrap('<div class="wrap-output">');
 });
 
-$('button').click(function () {
-    let titlePage = $('.page-form').attr('data-page-title');
-    $('#hidden').val(titlePage);
-    console.log(titlePage);
+// плавный переход до секции при клике на иконку мыши
+jQuery('a[href*="#"]').on('click', function() {
+    jQuery('html, body').animate({
+        scrollTop: jQuery(jQuery.attr(this, 'href')).offset().top
+    }, 400);
+    return false;
 });
 
 // маска ввода номера телефона
 [].forEach.call(document.querySelectorAll('input[name="phone"]'), function (e) {
-    var t;
+    let t;
 
     function a(e) {
         e.keyCode && (t = e.keyCode), this.selectionStart < 3 && e.preventDefault();
-        var a = "+7 (___) ___-__-__", n = 0, c = a.replace(/\D/g, ""), o = this.value.replace(/\D/g, ""),
+        let a = "+7 (___) ___-__-__", n = 0, c = a.replace(/\D/g, ""), o = this.value.replace(/\D/g, ""),
             s = a.replace(/[_\d]/g, function (e) {
                 return n < o.length ? o.charAt(n++) || c.charAt(n) : e
             });
         -1 != (n = s.indexOf("_")) && (n < 5 && (n = 3), s = s.slice(0, n));
-        var l = a.substr(0, this.value.length).replace(/_+/g, function (e) {
+        let l = a.substr(0, this.value.length).replace(/_+/g, function (e) {
             return "\\d{1," + e.length + "}"
-        }).replace(/[+()]/g, "\\$&");
-        (!(l = new RegExp("^" + l + "$")).test(this.value) || this.value.length < 5 || t > 47 && t < 58) && (this.value = s), "blur" == e.type && this.value.length < 5 && (this.value = "")
+        }).replace(/[+()]/g, "\\jQuery&");
+        (!(l = new RegExp("^" + l + "jQuery")).test(this.value) || this.value.length < 5 || t > 47 && t < 58) && (this.value = s), "blur" == e.type && this.value.length < 5 && (this.value = "")
     }
 
     e.addEventListener("input", a, !1), e.addEventListener("focus", a, !1), e.addEventListener("blur", a, !1)

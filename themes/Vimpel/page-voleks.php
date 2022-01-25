@@ -12,13 +12,13 @@ get_header();
         <section class="voleks__image">
             <div class="voleks__overlay-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/voleks-icon.svg" alt="Иконка Строй Снаб" class="voleks__icon" />
-                <h2 class="voleks__heading">Волекс абразив</h2>
+                <h1 class="voleks__heading">Волекс абразив</h1>
                 <p class="voleks__subheading">Продажа инструмента и абразивных материалов</p>
             </div>
         </section>
 
         <section class="about">
-            <h3 class="about__heading">О ПРОЕКТЕ</h3>
+            <h3 class="about__heading">О проекте</h3>
             <div class="about__container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/voleks-about-img.jpg" alt="Фотография" class="about__img about__img_voleks" />
                 <div class="about__text-container">
@@ -38,10 +38,10 @@ get_header();
                 </div>
             </div>
         </section>
-        <?php include 'section-stages.php'?>
+        <?php include 'inc/section-stages.php' ?>
         <section class="colors">
             <div class="colors__main-container">
-                <h3 class="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                <h3 class="colors__heading">Цвета и иконки</h3>
                 <div class="colors__content-container">
                     <div class="colors__container">
                         <div class="colors__square-container">
@@ -85,7 +85,7 @@ get_header();
             </div>
         </section>
         <section class="typography">
-            <h3 class="typography__header">ТИПОГРАФИКА</h3>
+            <h3 class="typography__header">Типографика</h3>
             <div class="typography__container">
                 <p class="typography__letter-main">Aa</p>
                 <div class="typography__roboto-container">
@@ -98,7 +98,7 @@ get_header();
         <section class="adaptive adaptive__voleks">
             <div class="adaptive__laptop-img"></div>
             <div class="adaptive__info-container adaptive__info-container_voleks">
-                <h3 class="adaptive__heading adaptive__heading_voleks">АДАПТИВНЫЙ ДИЗАЙН</h3>
+                <h3 class="adaptive__heading adaptive__heading_voleks">Адаптивный дизайн</h3>
                 <p class="adaptive__description adaptive__description_voleks">
                     Все наши сайты можно просматривать на самых разных устройствах,
                     таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана.

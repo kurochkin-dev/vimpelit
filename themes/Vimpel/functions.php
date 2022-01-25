@@ -3,31 +3,24 @@
 //удаление тегов <br> в формах contacts form 7
 add_filter('wpcf7_autop_or_not', '__return_false');
 
-//Перерегистрация jQuery
-add_action('wp_enqueue_scripts', 'include_custom_jquery');
-function include_custom_jquery()
-{
-    wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery-3.6.0.js', array(), '3.6.0', true);
-}
-
 add_action('wp_enqueue_scripts', 'slick_slider_scripts');
 function slick_slider_scripts()
 {
-    wp_enqueue_style('slick-style', get_template_directory_uri() . '/assets/css/slick.css', array(), null, 'all');
+    wp_enqueue_style('slick-style', get_template_directory_uri() . '/assets/css/slick.css', array(), null);
     wp_enqueue_script('slick-script', get_template_directory_uri() . '/assets/js/slick.min.js', array(), null, true);
 }
 
 add_action('wp_enqueue_scripts', 'theme_scripts');
 function theme_scripts()
 {
-    wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), null, 'all');
+    wp_enqueue_style('fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), null);
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('styles', get_template_directory_uri() . '/assets/css/styles.css');
     wp_enqueue_script('api-yandex', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ac441832-f13a-4b1d-9214-122da571f681', array(), '2.1', false);
-    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array('jquery'), null, true);
+    wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array(), null, true);
 }
 
-class WPSE_78121_Sublevel_Walker extends Walker_Nav_Menu
+class the_god_of_walker extends Walker_Nav_Menu
 {
     function start_lvl( &$output, $depth = 0, $args = array() ) {
         $indent = str_repeat("\t", $depth);
@@ -61,6 +54,11 @@ if( function_exists('acf_add_options_page') ) {
         'parent_slug'	=> 'theme-general-settings',
     ));
 
+    acf_add_options_sub_page(array(
+        'page_title' 	=> 'Настройки секции Stages',
+        'menu_title'	=> 'Stages',
+        'parent_slug'	=> 'theme-general-settings',
+    ));
 }
 
 register_nav_menus(array(

@@ -10,16 +10,21 @@ get_header();
 
 	<div class="catalog">
 		<section class="catalog__image-container">
-			<h2 class="catalog__heading">СОЗДАНИЕ САЙТА&#8209;КАТАЛОГА ПОД КЛЮЧ</h2>
+			<h1 class="catalog__heading">Создание сайта-каталога под ключ</h1>
 			<p class="catalog__subheading">Проектирование и разработка сайта-каталога в Санкт-Петербурге</p>
 			<button class="catalog__button" type="button">Заказать сайт</button>
 			<div class="catalog__bottom-container">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/mouse.svg" alt="Иконка мышки"
-					 class="catalog__mouse-icon"/>
+				<a href="#catalog-info" class="scrolldown">
+					<svg width="47" height="53" viewBox="0 0 47 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<ellipse class="roll" cx="31.5" cy="13.5" rx="2.5" ry="3.5" fill="white"/>
+						<rect class="mouse" x="16.5" y="0.5" width="30" height="52" rx="15" stroke="white"/>
+						<path class="down" d="M3.64645 41.3536C3.84171 41.5488 4.15829 41.5488 4.35355 41.3536L7.53553 38.1716C7.7308 37.9763 7.7308 37.6597 7.53553 37.4645C7.34027 37.2692 7.02369 37.2692 6.82843 37.4645L4 40.2929L1.17157 37.4645C0.976312 37.2692 0.659729 37.2692 0.464467 37.4645C0.269205 37.6597 0.269205 37.9763 0.464467 38.1716L3.64645 41.3536ZM3.5 17L3.5 41L4.5 41L4.5 17L3.5 17Z" fill="white"/>
+					</svg>
+				</a>
 				<p class="catalog__text">Прокрутите вниз</p>
 			</div>
 		</section>
-		<section class="catalog-info">
+		<section id="catalog-info" class="catalog-info">
 			<div class="catalog-info__container">
 				<h3 class="catalog-info__heading"><?php the_field('catalog_title'); ?></h3>
 				<p class="catalog-info__description">
@@ -57,53 +62,6 @@ get_header();
 			</div>
 			<div class="catalog-page-form__form">
 				<?php echo do_shortcode('[contact-form-7 id="344" title="Форма на странице Создание сайта-каталога"]') ?>
-<!--				<div class="catalog-page-form__form-container">-->
-<!--					<div class="catalog-page-form__radio-container">-->
-<!--						<p class="catalog-page-form__question">Дополнительные услуги</p>-->
-<!--						<div class="catalog-page-form__radio-buttons-container">-->
-<!--							<div class="catalog-page-form__radio">-->
-<!--								<input id="admin" type="radio" name="variant" value="Администрирование сайта" checked/>-->
-<!--								<label for="admin">Администрирование сайта</label>-->
-<!--							</div>-->
-<!--							<div class="catalog-page-form__radio">-->
-<!--								<input id="copywriting" type="radio" name="variant" value="Копирайтинг"/>-->
-<!--								<label for="copywriting">Копирайтинг</label>-->
-<!--							</div>-->
-<!--							<div class="catalog-page-form__radio">-->
-<!--								<input id="logoDev" type="radio" name="variant" value="Разработка логотипа"/>-->
-<!--								<label for="logoDev">Разработка логотипа</label>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="catalog-page-form__inputs-container">-->
-<!--						<p class="catalog-page-form__inputs-heading">Оставьте заявку и получите консультацию-->
-<!--							специалиста</p>-->
-<!--						<div class="catalog-page-form__inputs-main-container">-->
-<!--							<div class="catalog-page-form__input-container">-->
-<!--								<input type="text" class="catalog-page-form__input" id="catalog-name-input" name="name"-->
-<!--									   value='' min="2" max="50" placeholder="Ваше имя" pattern="[A-Za-zа-яёА-ЯЁ -]{1,}"-->
-<!--									   required/>-->
-<!--								<span id="catalog-name-input-error" class="catalog-page-form-form__input_error"></span>-->
-<!--							</div>-->
-<!--							<div class="catalog-page-form__input-container">-->
-<!--								<input type="text" class="catalog-page-form__input" id="catalog-number-input"-->
-<!--									   name="number" value='' min="3" max="20" placeholder="Ваш телефон"-->
-<!--									   pattern='^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$' required/>-->
-<!--								<span id="catalog-number-input-error"-->
-<!--									  class="catalog-page-form-form__input_error"></span>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--					<div class="catalog-page-form__submit-container">-->
-<!--						<button type="submit" class="catalog-page-form__submit-button">Получить консультацию</button>-->
-<!--						<div class="catalog-page-form__under-submit-button-container">-->
-<!--							<img src="--><?php //echo get_template_directory_uri(); ?><!--/assets/images/svg/check.svg"-->
-<!--								 alt="Иконка галочки" class="catalog-page-form__under-submit-button-check"/>-->
-<!--							<p class="catalog-page-form__under-submit-button-text">Принимаю пользовательское-->
-<!--								соглашение</p>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</div>-->
 			</div>
 		</div>
 		<section class="days">

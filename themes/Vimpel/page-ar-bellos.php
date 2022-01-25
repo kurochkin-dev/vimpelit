@@ -12,7 +12,7 @@ get_header();
         <section class="ar-bellos__image">
             <div class="ar-bellos__overlay-container">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/arbellos-icon.svg" alt="Иконка Арбеллос" class="ar-bellos__icon" />
-                <h2 class="ar-bellos__heading">ARbellos</h2>
+                <h1 class="ar-bellos__heading">ARbellos</h1>
                 <p class="ar-bellos__subheading">Инсталяция светопрозрачных решений</p>
             </div>
         </section>
@@ -38,7 +38,7 @@ get_header();
                 </div>
             </div>
         </section>
-        <?php include 'section-stages.php'?>
+        <?php include 'inc/section-stages.php' ?>
         <section class="colors">
             <div class="colors__main-container">
                 <h3 class="colors__heading">ЦВЕТА И ИКОНКИ</h3>
@@ -85,7 +85,7 @@ get_header();
             </div>
         </section>
         <section class="typography">
-            <h3 class="typography__header">ТИПОГРАФИКА</h3>
+            <h3 class="typography__header">Типографика</h3>
             <div class="typography__container">
                 <p class="typography__letter-main">Aa</p>
                 <div class="typography__roboto-container">
@@ -97,7 +97,7 @@ get_header();
         </section>
         <section class="ar-bellos-adaptive">
             <div class="ar-bellos-adaptive__info-container">
-                <h3 class="ar-bellos-adaptive__heading">АДАПТИВНЫЙ ДИЗАЙН</h3>
+                <h3 class="ar-bellos-adaptive__heading">Адаптивный дизайн</h3>
                 <p class="ar-bellos-adaptive__description">
                     Все наши сайты можно просматривать на самых разных устройствах,
                     таких как смартфон, планшет, ноутбук и т.д., независимо от разрешения экрана.
