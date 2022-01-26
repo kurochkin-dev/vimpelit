@@ -9,15 +9,13 @@ if (is_single()) {
     $cat = get_category(get_query_var('cat'));
 }
 $cat_slug = $cat->slug;
-
+//var_dump($cat_slug);
 while (have_posts()) :
     the_post();
-
     ?>
-
     <?php
-    if ($cat_slug == "case") {
-        get_template_part('template-parts/cases/content', 'case');
+    if ($cat_slug == "portfolio-web") {
+        get_template_part('template-parts/content-single/content', 'cases');
     }
 
 

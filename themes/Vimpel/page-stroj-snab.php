@@ -40,7 +40,7 @@ get_header();
         <?php include 'inc/section-stages.php' ?>
         <section class="colors">
             <div class="colors__main-container">
-                <h3 class="colors__heading">ЦВЕТА И ИКОНКИ</h3>
+                <h3 class="colors__heading">Цвета и иконки</h3>
                 <div class="colors__content-container">
                     <div class="colors__container">
                         <div class="colors__square-container">

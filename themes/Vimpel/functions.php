@@ -20,6 +20,17 @@ function theme_scripts()
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array(), null, true);
 }
 
+
+add_theme_support('post-thumbnails');
+
+/* Remove the <p> tag from images */
+function img_unautop($pee) {
+    $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<figure>$1</figure>', $pee);
+    return $pee;
+}
+add_filter( 'the_content', 'img_unautop', 30 );
+
+//Walker для мобильного и десктопного меню
 class the_god_of_walker extends Walker_Nav_Menu
 {
     function start_lvl( &$output, $depth = 0, $args = array() ) {
