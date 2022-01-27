@@ -13,18 +13,16 @@
             <?php the_content(); ?>
 		</div>
 	</section>
-    <?php include (TEMPLATEPATH . '/inc/section-stages.php') ?>
+    <?php include(TEMPLATEPATH . '/inc/section-stages.php') ?>
 	<section class="colors">
         <?php the_field('case_colors_and_icons'); ?>
 	</section>
 	<section class="typography">
         <?php the_field('case_typography'); ?>
 	</section>
-	<section class="adaptive">
+	<section class="adaptive <?php the_field('case_class_img'); ?>">
         <?php the_field('case_adaptive'); ?>
 	</section>
-	<div class="preview">
-        <?php the_field('case_img_preview'); ?>
-		<img class="preview__img-three" src="<?php the_field('case_img_preview_two'); ?>" alt="Изображение сайта">
-	</div>
+    <?php the_field('case_img_preview'); ?>
+    <?php the_field('case_img_preview_two'); ?>
 </div>

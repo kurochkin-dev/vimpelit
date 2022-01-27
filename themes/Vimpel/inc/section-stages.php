@@ -55,7 +55,7 @@
 					 src="<?php echo get_template_directory_uri(); ?>/assets/images/svg/mini-ellipse.svg"
 					 alt="Иконка кружка"/>
 			</div>
-			<h3 class="stages__item-heading">Програмирование</h3>
+			<h3 class="stages__item-heading">Программирование</h3>
 			<p class="stages__item-subheading">Наши программисты создают сайт, адаптивный под любые
 				устройства</p>
 		</div>
@@ -72,8 +72,7 @@
 					 alt="Иконка галочки"/>
 			</div>
 			<h3 class="stages__item-heading">Сдача проекта</h3>
-			<p class="stages__item-subheading">Вы принимаете готовый сайт и получаете необходимые
-				консультации</p>
+			<p class="stages__item-subheading">Вы принимаете готовый сайт и получаете необходимые консультации</p>
 		</div>
 	</div>
 </section>

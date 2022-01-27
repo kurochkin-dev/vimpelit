@@ -1,5 +1,6 @@
 <?php
 
+
 //удаление тегов <br> в формах contacts form 7
 add_filter('wpcf7_autop_or_not', '__return_false');
 
@@ -23,12 +24,6 @@ function theme_scripts()
 
 add_theme_support('post-thumbnails');
 
-/* Remove the <p> tag from images */
-function img_unautop($pee) {
-    $pee = preg_replace('/<p>\\s*?(<a .*?><img.*?><\\/a>|<img.*?>)?\\s*<\\/p>/s', '<figure>$1</figure>', $pee);
-    return $pee;
-}
-add_filter( 'the_content', 'img_unautop', 30 );
 
 //Walker для мобильного и десктопного меню
 class the_god_of_walker extends Walker_Nav_Menu

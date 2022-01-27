@@ -86,6 +86,31 @@ a {
 	background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
 }
 
+.postid-802 .header-info_background {
+	background: -o-linear-gradient(359.67deg, #071D55 -5.84%, #00F0FF 101.87%);
+	background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
+}
+
+.postid-834 .header-info_background {
+	background: -o-linear-gradient(359.67deg, #071D55 -5.84%, #00F0FF 101.87%);
+	background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
+}
+
+.postid-851 .header-info_background {
+	background: -o-linear-gradient(359.67deg, #071D55 -5.84%, #00F0FF 101.87%);
+	background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
+}
+
+.postid-866 .header-info_background {
+	background: -o-linear-gradient(359.67deg, #071D55 -5.84%, #00F0FF 101.87%);
+	background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
+}
+
+.postid-874 .header-info_background {
+	background: -o-linear-gradient(359.67deg, #071D55 -5.84%, #00F0FF 101.87%);
+	background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
+}
+
 .page-id-44 .header-info_background {
 	background: -o-linear-gradient(359.67deg, #071D55 -5.84%, #00F0FF 101.87%);
 	background: linear-gradient(90.33deg, #071D55 -5.84%, #00F0FF 101.87%);
@@ -8617,8 +8642,8 @@ div .wpcf7 form .wpcf7-response-output {
 	display: -ms-flexbox;
 	display: flex;
 	margin: 128px auto 256px;
-	background: -o-linear-gradient(3.02deg, #00133E 2%, #05D0DF 98%);
-	background: linear-gradient(86.98deg, #00133E 2%, #05D0DF 98%);
+	/*background: -o-linear-gradient(3.02deg, #00133E 2%, #05D0DF 98%);*/
+	/*background: linear-gradient(86.98deg, #00133E 2%, #05D0DF 98%);*/
 }
 
 .price__cards-container {
@@ -8637,7 +8662,25 @@ div .wpcf7 form .wpcf7-response-output {
 	flex-direction: column;
 	background-color: #FFFFFF;
 	width: 387px;
-	margin: 2px;
+	/*margin: 2px;*/
+	border: 2px solid skyblue;
+	border-image: -webkit-linear-gradient(86.98deg, #00133E 2%, #05D0DF 98%);
+	border-image-slice: 1;
+}
+
+.card:nth-child(1) {
+	border-right: none;
+}
+
+.card:nth-child(2) {
+	/*border-right: none;*/
+}
+
+.card {
+	border: 2px solid skyblue;
+	border-image: -o-linear-gradient(3.02deg, #00133E 2%, #05D0DF 98%);
+	border-image: -webkit-linear-gradient(86.98deg, #00133E 2%, #05D0DF 98%);
+	border-image-slice: 1;
 }
 
 .card__heading {
@@ -8839,6 +8882,13 @@ div .wpcf7 form .wpcf7-response-output {
 		width: 484px;
 		margin: 32px auto 0;
 		border: 2px solid skyblue;
+		-o-border-image: -o-linear-gradient(359.67deg, #071D55 -5.85%, #071D55 -5.84%, #00F0FF 101.87%);
+		border-image: -webkit-linear-gradient(90.33deg, #071D55 -5.85%, #071D55 -5.84%, #00F0FF 101.87%);
+		border-image-slice: 1;
+	}
+
+	.card:nth-child(1) {
+		border: 3px solid skyblue;
 		-o-border-image: -o-linear-gradient(359.67deg, #071D55 -5.85%, #071D55 -5.84%, #00F0FF 101.87%);
 		border-image: -webkit-linear-gradient(90.33deg, #071D55 -5.85%, #071D55 -5.84%, #00F0FF 101.87%);
 		border-image-slice: 1;
@@ -13695,7 +13745,7 @@ button, input, optgroup, select, textarea {
 	}
 
 	.about__list-heading {
-		margin: 24px auto 0 0;
+		/*margin: 24px auto 0 0;*/
 	}
 
 	.colors__main-container {
@@ -13967,6 +14017,7 @@ button, input, optgroup, select, textarea {
 	margin: 128px auto 256px;
 }
 
+
 @media screen and (max-width: 1800px) {
 	.adaptive__info-container_voleks {
 		margin: 96px auto auto 200px;
@@ -14167,6 +14218,20 @@ button, input, optgroup, select, textarea {
 		height: 415px;
 		-o-object-position: -225px;
 		object-position: -225px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.wp-image-746, .wp-image-734, .wp-image-988, .wp-image-383, .wp-image-835 {
+		padding-bottom: 15px;
+	}
+
+	.wp-block-media-text__content {
+		text-align: center;
+	}
+
+	.about__text-container {
+		max-width: unset;
 	}
 }
 
@@ -16967,8 +17032,8 @@ td {
 	right: -2px;
 	bottom: -40px;
 	margin: auto;
-	-webkit-animation: down 3.5s infinite both;
-	animation: down 3.5s infinite both;
+	-webkit-animation: down 1s infinite both;
+	animation: down 1s infinite both;
 }
 
 .scrolldown-index .down, .scrolldown svg .roll {
@@ -17020,13 +17085,13 @@ td {
 		top: 1px;
 	}
 	25% {
-		top: 2px;
-	}
-	50% {
 		top: 3px;
 	}
+	50% {
+		top: 4px;
+	}
 	75% {
-		top: 2px;
+		top: 3px;
 	}
 	100% {
 		top: 1px;
@@ -17039,13 +17104,13 @@ td {
 		top: 1px;
 	}
 	25% {
-		top: 2px;
-	}
-	50% {
 		top: 3px;
 	}
+	50% {
+		top: 4px;
+	}
 	75% {
-		top: 2px;
+		top: 3px;
 	}
 	100% {
 		top: 1px;
@@ -17058,13 +17123,13 @@ td {
 		top: 1px;
 	}
 	25% {
-		top: 2px;
-	}
-	50% {
 		top: 3px;
 	}
+	50% {
+		top: 4px;
+	}
 	75% {
-		top: 2px;
+		top: 3px;
 	}
 	100% {
 		top: 1px;

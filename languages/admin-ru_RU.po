@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.9.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-01-08 10:38:23+0000\n"
+"PO-Revision-Date: 2022-01-27 07:45:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2545,7 +2545,7 @@ msgstr "Выберите город в том же часовом поясе и�
 
 #: wp-admin/options-general.php:112
 msgid "Administration Email Address"
-msgstr "Административный адрес email"
+msgstr "Административный Email"
 
 #: wp-admin/options-general.php:101
 msgid "https://wordpress.org/support/article/giving-wordpress-its-own-directory/"
@@ -12451,7 +12451,7 @@ msgstr "В этом часовом поясе в настоящий момент
 
 #: wp-admin/options-general.php:114 wp-admin/network/settings.php:165
 msgid "This address is used for admin purposes. If you change this, we will send you an email at your new address to confirm it. <strong>The new address will not become active until confirmed.</strong>"
-msgstr "Этот адрес используется в целях администрирования. Если вы смените его, на новый адрес будет отправлено письмо для подтверждения. <strong>Новый адрес вступит в силу только после подтверждения.</strong>"
+msgstr "Этот адрес используется для администрирования. Для его изменения <strong>обязателен переход по ссылке, которая будет отправлена на новый адрес</strong>."
 
 #: wp-admin/includes/nav-menu.php:517 wp-admin/includes/nav-menu.php:813
 msgid "View All"
