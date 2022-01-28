@@ -1,5 +1,5 @@
 <section class="stages">
-	<h1 class="stages__heading"><?php the_field('stages_title'); ?></h1>
+	<h1 class="stages__heading">Этапы работы</h1>
 	<div class="stages__container">
 		<div class="stages__item-container">
 			<div class="stages__icon-container">

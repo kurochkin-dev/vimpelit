@@ -10,7 +10,7 @@ get_header();
 
 	<div class="web">
 		<section class="web__image-container">
-			<h1 class="web__heading">WEB студия</h1>
+			<h1 class="web__heading"><?php the_title(); ?></h1>
 			<button class="web__button" type="button">
 				Получить консультацию
 			</button>
@@ -41,7 +41,13 @@ get_header();
                 <?php endif; ?>
 			</div>
 		</section>
-        <?php include 'inc/section-stages.php' ?>
+<!--		<section class="stages">-->
+<!--			<h1 class="stages__heading">Этапы работы</h1>-->
+<!--			<div class="stages__container">-->
+				<?php the_content(); ?>
+			</div>
+<!--		</section>-->
+<!--        --><?php //include 'inc/section-stages.php' ?>
 		<section class="history-web">
 			<div class="history-web__container">
 				<h3 class="history-web__heading"><?php the_field('web_page_history_title'); ?></h3>
