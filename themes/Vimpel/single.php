@@ -9,7 +9,6 @@ if (is_single()) {
     $cat = get_category(get_query_var('cat'));
 }
 $cat_slug = $cat->slug;
-//var_dump($cat_slug);
 while (have_posts()) :
     the_post();
     ?>

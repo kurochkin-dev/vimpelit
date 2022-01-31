@@ -7,13 +7,8 @@
 			<p class="yur-konsul__subheading"><?php the_field('case_desc'); ?></p>
 		</div>
 	</section>
-<!--	<section class="about">-->
-		<h3 class="about__heading">О проекте</h3>
-<!--		<div class="about__container">-->
-            <?php the_content(); ?>
-<!--		</div>-->
-<!--	</section>-->
-<!--    --><?php //include(TEMPLATEPATH . '/inc/section-stages.php') ?>
+	<h3 class="about__heading">О проекте</h3>
+    <?php the_content(); ?>
 	<section class="colors">
         <?php the_field('case_colors_and_icons'); ?>
 	</section>
