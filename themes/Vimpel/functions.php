@@ -1,9 +1,9 @@
 <?php
 
-
 //удаление тегов <br> в формах contacts form 7
 add_filter('wpcf7_autop_or_not', '__return_false');
 
+// скрипты слик слайдера
 add_action('wp_enqueue_scripts', 'slick_slider_scripts');
 function slick_slider_scripts()
 {
@@ -11,6 +11,7 @@ function slick_slider_scripts()
     wp_enqueue_script('slick-script', get_template_directory_uri() . '/assets/js/slick.min.js', array(), null, true);
 }
 
+// общие скрипты темы
 add_action('wp_enqueue_scripts', 'theme_scripts');
 function theme_scripts()
 {
@@ -21,6 +22,7 @@ function theme_scripts()
     wp_enqueue_script('script', get_template_directory_uri() . '/assets/js/script.js', array(), null, true);
 }
 
+// поддержка миниатюр, хз зачем пока не удаляю
 add_theme_support('post-thumbnails');
 
 //Walker для мобильного и десктопного меню
@@ -36,6 +38,7 @@ class the_god_of_walker extends Walker_Nav_Menu
     }
 }
 
+// Настройки темы
 if( function_exists('acf_add_options_page') ) {
 
     acf_add_options_page(array(
@@ -65,6 +68,7 @@ if( function_exists('acf_add_options_page') ) {
     ));
 }
 
+// регистрация десктопного и мобильного меню
 register_nav_menus(array(
     'top'    => 'Верхнее меню',
     'mobile' => 'Мобильное меню'
