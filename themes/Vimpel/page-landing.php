@@ -4,9 +4,7 @@ Template Name: Создание Landing page под ключ
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 <div class="landing">
     <section class="landing__image-container">
@@ -50,6 +48,5 @@ get_header();
     <?php include 'inc/section-landing.php' ?>
 </div>
 
-<?php
-get_footer();
+<?php get_footer();
 

@@ -4,9 +4,7 @@ Template Name: Цены на услуги IT сервиса
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="price-it">
 		<section class="price-it__image-container">
@@ -53,7 +51,5 @@ get_header();
 		</section>
 	</div>
 
-
-<?php
-get_footer();
+<?php get_footer();
 

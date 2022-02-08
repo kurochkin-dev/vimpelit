@@ -4,9 +4,7 @@ Template Name: Создание интернет-магазина под клю�
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<section class="shop__image-container">
 		<h1 class="shop__heading">Создание интернет-мгазина под ключ</h1>
@@ -99,6 +97,5 @@ get_header();
 		</div>
 	</section>
 
-<?php
-get_footer();
+<?php get_footer();
 

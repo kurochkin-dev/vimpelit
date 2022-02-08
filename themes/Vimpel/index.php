@@ -3,9 +3,7 @@
 Template Name: Главная
 */
 ?>
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="main-page">
 		<nav class="main-page__images-container">
@@ -100,7 +98,6 @@ get_header();
 			</div>
 		</div>
 	</div>
-<?php
-get_footer();
+<?php get_footer();
 
 

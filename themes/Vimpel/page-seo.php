@@ -4,9 +4,7 @@ Template Name: Seo-услуги под ключ
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="seo">
 		<section class="seo__image-container">
@@ -59,6 +57,5 @@ get_header();
         <?php include 'inc/section-seo.php' ?>
 	</div>
 
-<?php
-get_footer();
+<?php get_footer();
 

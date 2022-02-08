@@ -4,9 +4,7 @@ Template Name: it
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 
 	<section class="it__image-container">
@@ -301,6 +299,4 @@ get_header();
 		</div>
 	</section>
 
-
-<?php
-get_footer();
+<?php get_footer();

@@ -4,9 +4,7 @@ Template Name: Цены на услуги web студии
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="price-web">
 		<section class="price-web__image-container">
@@ -148,5 +146,4 @@ get_header();
 		</section>
 	</div>
 
-<?php
-get_footer();
+<?php get_footer();

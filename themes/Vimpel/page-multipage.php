@@ -4,9 +4,7 @@ Template Name: Создание многостраничного (корпора
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 	<div class="multipage">
 		<section class="multipage__image-container">
 			<h1 class="multipage__heading">Создание многостраничного (корпоративного) сайта "под ключ"</h1>
@@ -68,5 +66,4 @@ get_header();
 	</div>
 
 
-<?php
-get_footer();
+<?php get_footer();

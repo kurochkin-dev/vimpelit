@@ -4,9 +4,7 @@ Template Name: Создание сайта-каталога под ключ
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="catalog">
 		<section class="catalog__image-container">
@@ -109,5 +107,4 @@ get_header();
 		</section>
 	</div>
 
-<?php
-get_footer();
+<?php get_footer();

@@ -1,6 +1,4 @@
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 <div class="portfolio-web">
 	<section class="portfolio-web__image-container">
@@ -59,6 +57,5 @@ get_header();
 	</section>
 </div>
 
-<?php
-get_footer();
+<?php get_footer();
 

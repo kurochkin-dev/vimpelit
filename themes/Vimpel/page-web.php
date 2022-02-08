@@ -4,9 +4,7 @@ Template Name: web
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="web">
 		<section class="web__image-container">
@@ -68,9 +66,7 @@ get_header();
 			 src="<?php the_field('web_page_history_img'); ?>"
 			 alt="Иллюстрация совещания"/>
 	</section>
-<?php
-include 'inc/section-page-form.php';
-?>
+<?php include 'inc/section-page-form.php'; ?>
 	<section class="portfolio-slider">
 		<div class="portfolio-slider__container">
 			<h2 class="portfolio-slider__heading">Наши последние работы</h2>
@@ -100,5 +96,4 @@ include 'inc/section-page-form.php';
 	</section>
 	</div>
 
-<?php
-get_footer();
+<?php get_footer();

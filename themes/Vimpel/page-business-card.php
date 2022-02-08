@@ -4,9 +4,7 @@ Template Name: Создание сайта-визитки под ключ
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="business-card">
 		<section class="business-card__image-container">
@@ -39,5 +37,4 @@ get_header();
         <?php include 'inc/section-business-card.php' ?>
 	</div>
 
-<?php
-get_footer();
+<?php get_footer();

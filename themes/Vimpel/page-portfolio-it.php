@@ -4,9 +4,7 @@ Template Name: Портфолио It сервис
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 	<div class="portfolio-it">
 		<section class="portfolio-it__image-container">
@@ -42,5 +40,4 @@ get_header();
 		</section>
 	</div>
 
-<?php
-get_footer();
+<?php get_footer();
